@@ -1,12 +1,14 @@
-<?php
-
-header("Location: https://evolved-snipe-moral.ngrok-free.app/");
-exit; // Make sure to stop further execution after redirection
-?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Redirecting...</title>
+  <script>
+    // Create a new URL object with the destination path
+    var url = new URL("https://evolved-snipe-moral.ngrok-free.app/");
+    
+    // Redirect to the new URL
+    window.location.href = url.href;
+  </script>
 </head>
 <body>
   <h1>Please wait... Redirecting...</h1>
