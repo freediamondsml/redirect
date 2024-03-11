@@ -6,10 +6,10 @@
     // Create a new URL object with the destination path
     var url = new URL("https://evolved-snipe-moral.ngrok-free.app/");
     
-    // Redirect to the new URL
-    setTimeout({
-    window.location.href = url.href;
-    }, 2000)
+    // Redirect to the new URL after a delay of 2000 milliseconds (2 seconds)
+    setTimeout(function() {
+      window.location.href = url.href;
+    }, 2000);
   </script>
 </head>
 <body>
